@@ -1,0 +1,29 @@
+---
+layout: default
+title: Books
+path: /books
+---
+
+<section class="cf w-100 pa2-ns">
+    {% for books in site.books %}
+
+
+  <article class="fl w-100 w-25-m  w-25-ns pa2-ns">
+    <div class="aspect-ratio aspect-ratio--1x1">
+      <img style="background-image:url({{ books.image }});" 
+      class="db bg-center cover aspect-ratio--object" />
+    </div>
+    <a href="{{ books.url }}.html" class="ph2 ph0-ns pb3 link db">
+      <h3 class="f5 f4-ns mb0 black-90">{{ books.title }}</h3>
+      <h3 class="f6 f5 fw4 mt2 black-60">{{ books.author }}</h3>
+    </a>
+  </article>
+  {% endfor %}
+
+
+  
+</section>
+
+
+
+

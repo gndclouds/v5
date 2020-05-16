@@ -1,0 +1,44 @@
+<!-- <
+  <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+
+  <nav>
+    {% for item in site.data.navigation %}
+      <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
+        {{ item.name }}
+      </a>
+    {% endfor %}
+  </nav>
+ -->
+
+<nav class="dt w-100 border-box pa3 ph3-ns">
+
+      {% if page.url == "/" %}
+      <div class="flex">
+        <a class="link dib" href="#">☁️ </a><input class="dib" type="text" id="myInput" value="{{page.title}}" >
+              <button style="display:none;" id="myBtn" onclick="directNav()"></button>
+      </div>
+
+  {% else %}
+  <div class="flex">
+    <span class="link dib goback" onclick="goBack();"><-</span>
+    <input class="dib" type="text" id="myInput" value=" {{page.title}}">
+     <button style="display:none;" id="myBtn" onclick="directNav()"></button>
+  </div>
+
+{% endif %}
+
+
+      <div class="dtc v-mid w-75 tr">
+<!--         <a
+          class="link dim dark-gray f6 f5-ns dib mr3 mr4-ns"
+          href="#"
+          title="About"
+          >log</a
+        >
+        <a
+          class="link dim dark-gray f6 f5-ns dib mr3 mr4-ns"
+          href="#"
+          title="Store"
+          >essays</a
+        > -->
+    </nav>

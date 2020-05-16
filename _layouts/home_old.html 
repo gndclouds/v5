@@ -1,0 +1,77 @@
+---
+layout: default
+title: notes
+---
+
+<p>
+    {% for tag in site.tags %}
+    <!-- Here's a hack to generate a "tag cloud" where the size of
+    the word is directly proportional to the number of posts with
+    that tag. -->
+    <a href="/tags/{{ tag[0] }}/"
+    style="font-size: {{ tag[1] | size | times: 2 | plus: 10 }}px">
+        {{ tag[0] }} |
+    </a>
+    {% endfor %}
+</p>
+
+<grid columns=3>
+  <c span-s=row span=row class="" >
+    <img src="" alt="">
+<h1>Hero Feature</h1>
+  </c>
+  <!-- <c span-s=row class="" >
+      <img src="" alt="">
+<h1>Hero Feature</h1>
+  </c>
+  <c span-s=row class="" >
+    <img src="" alt="">
+<h1>Hero Feature</h1>
+  </c> -->
+
+  <c span-s=row span=row class="searchSection">Search Box goes here
+
+    <form action="/search.html" method="get">
+    		<label for="search_box">Search</label>
+    		<input type="text" id="search_box" name="query">
+    		<input type="submit" value="search">
+    	</form>
+
+  </c>
+
+
+  <c class="heroList">
+    <h3>notes</h3>
+    <ul>
+      {% for notes in site.notes limit:10 %}
+        <li>
+          <h3><a href="{{ notes.url }}">{{ notes.title }}</a></h3>
+        <!--  <p>{{ author.content | markdownify }}</p> -->
+        </li>
+      {% endfor %}
+    </ul>
+  </c>
+  <c class="heroList">
+    <h3>notes</h3>
+    <ul>
+      {% for notes in site.notes limit:10 %}
+        <li>
+          <h3><a href="{{ notes.url }}">{{ notes.title }}</a></h3>
+        <!--  <p>{{ author.content | markdownify }}</p> -->
+        </li>
+      {% endfor %}
+    </ul>
+  </c>
+  <c class="heroList">
+    <h3>Logs</h3>
+    <ul>
+      {% for essays in site.essays limit:10 %}
+        <li>
+          <h3><a href="{{ essays.url }}">{{ essays.title }}</a></h3>
+        <!--  <p>{{ author.content | markdownify }}</p> -->
+        </li>
+      {% endfor %}
+    </ul>
+  </c>
+
+</grid>

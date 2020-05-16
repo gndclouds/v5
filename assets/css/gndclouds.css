@@ -1,0 +1,140 @@
+/* FONTS */
+@import url("https://rsms.me/inter/inter.css");
+
+html {
+  font-family: "Inter", sans-serif, "Segoe UI Emoji", "Apple Color Emoji",
+    "Segoe UI Symbol";
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif, "Segoe UI Emoji", "Apple Color Emoji",
+      "Segoe UI Symbol";
+  }
+}
+
+/* GENERAL CSS */
+body {
+  -webkit-font-feature-settings: "liga"1, "ss01"1, "zero"1, "cv11"1, 'frac'1, 'calt'1, 'tnum'1;
+  -moz-font-feature-settings: "liga"1, "ss01"1, "zero"1, "cv11"1, 'frac'1, 'calt'1, 'tnum'1;
+  -ms-font-feature-settings: "liga"1, "ss01"1, "zero"1, "cv11"1, 'frac'1, 'calt'1, 'tnum'1;
+  font-feature-settings: "liga"1, "ss01"1, "zero"1, "cv11"1, 'frac'1, 'calt'1, 'tnum'1;
+  /* background-image: url("https://source.unsplash.com/user/gndclouds"); */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+}
+
+nav{
+  position: fixed;
+ top: 0;
+ width: 100%;
+}
+
+input[type="text"] {
+  outline: none;
+  border: none; }
+  
+footer {
+  position: fixed;
+ top: 90vh;
+ width: 100vw;
+}
+
+footer select {
+  cursor: pointer;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-left: 1rem;
+  margin-left: -1rem;
+
+}
+
+iframe {
+  border: 0;
+}
+
+h3 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.search {
+  width: 80vw;
+  height: 40px;
+}
+
+.minimal-card{
+}
+
+/* LIGHT MODE */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+  }
+
+  h1, h2, h3, h4, h5, p, nav, footer {
+    color: black;
+  }
+
+  .imported-text {
+    color: black;
+  }
+
+  .box-border {
+    background: #FFFFFF;
+    border-color: #000000;
+  }
+
+  /* options {
+    border: 1px solid #e5e5e5;
+  } */
+  select {
+    border: none;
+    background: #FFFFFF;
+    color:#000000;
+  }
+}
+
+.card-hover:hover{
+  box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);
+  /* border-radius: 3px; */
+}
+
+/* DARK MODE */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+  }
+
+  h1, h2, h3, h4, h5, p, nav, footer {
+    color: white;
+  }
+
+  .imported-text {
+    color: white;
+  }
+
+  .box-border {
+    background: #000000;
+    border-color: #FFFFFF;
+  }
+  /* options {
+    border: 1px solid #e5e5e5;
+  } */
+  select {
+    border: none;
+    background: #000000;
+    color:#FFFFFF;
+  }
+  .card-hover:hover{
+    box-shadow: 6px 6px 0px rgba(255, 255, 255, 0.25);
+    /* border-radius: 3px; */
+  }
+}

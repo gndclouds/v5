@@ -1,0 +1,39 @@
+---
+layout: default
+title: book
+---
+
+
+<section class="hero book">
+  <grid columns=2>
+    <c span-s=row span=1> <img src="{{page.image}}" alt="">
+    </c>
+    <c span-s=row span=2-3>
+      <h1>{{page.title}}</h1>
+      <br>
+      <h2>{{page.author}}</h2>
+      <br>
+      <h3>{{page.tags}}</h3>
+
+    </c>
+
+  </grid>
+</section>
+
+<grid columns=3>
+</grid>
+
+{% for post in site.corpus %}
+  {% for tag in post.tags %}
+    {% if post.tags contains page.title  %}
+
+    <c>
+      <p>{{post.content}}</p>
+      <br>
+    </c>
+
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+

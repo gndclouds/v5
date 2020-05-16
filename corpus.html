@@ -1,0 +1,15 @@
+---
+layout: default
+title: corpus
+---
+<h1>corpus test page</h1>
+
+<ul>
+  {% for corpus in site.corpus %}
+    <li>
+      <h2><a href="{{ corpus.origin }}">{{ corpus.title }}</a></h2>
+       <h3>{{ corpus.date }}</h3>
+    <!--  <p>{{ corpsu.content | markdownify }}</p> -->
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,46 @@
+title: gndclouds
+email: gndclouds@icloud.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://wiki.gndclouds.cc"
+twitter_username: gndclouds
+github_username:  gndclouds
+permalink: pretty
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+collections:
+  notes:
+    output: true
+    permalink: /notes/:name.html
+  books:
+    output: true
+    permalink: /books/:name
+  essays:
+    output: true
+    permalink: /essays/:name.html
+  logs:
+    output: true
+    permalink: /logs/:name.html
+  research:
+    output: true
+    permalink: /research/:name.html
+  projects:
+    output: true
+    permalink: /projects/:name.html
+
+
+# defaults:
+#   - scope:
+#       path: ""
+#       type: "book"
+#     values:
+#       layout: book

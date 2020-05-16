@@ -1,0 +1,10 @@
+- name: Home
+  link: /
+- name: notes
+  link: /notes
+- name: books
+  link: /books
+- name: essays
+  link: /essays
+- name: About
+  link: /about
