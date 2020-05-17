@@ -20,22 +20,22 @@ plugins:
 collections:
   notes:
     output: true
-    permalink: /notes/:name.html
+    permalink: /notes/:name
   books:
     output: true
     permalink: /books/:name
   essays:
     output: true
-    permalink: /essays/:name.html
+    permalink: /essays/:name
   logs:
     output: true
-    permalink: /logs/:name.html
+    permalink: /logs/:name
   research:
     output: true
-    permalink: /research/:name.html
+    permalink: /research/:name
   projects:
     output: true
-    permalink: /projects/:name.html
+    permalink: /projects/:name
 
 
 # defaults:
