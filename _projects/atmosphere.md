@@ -1,7 +1,7 @@
 ---
 layout: project
 path: "/atmosphere"
-date: "2019-09-09"
+date: "2014-09-09"
 title: "Atmosphere"
 tags: [ Camera, ]
 excerpt: "A preview of my first post"
@@ -48,4 +48,3 @@ Project Date: Fall 2014
 Project Length: 4 Weeks
 
 Team: Solo Project
-

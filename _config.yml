@@ -27,9 +27,6 @@ collections:
   essays:
     output: true
     permalink: /essays/:name
-  logs:
-    output: true
-    permalink: /logs/:name
   research:
     output: true
     permalink: /research/:name
