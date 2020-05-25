@@ -9,35 +9,35 @@ path: /clients
   <p>
     I work with organizations to research humans at the center of their products and services. This lead to me working at research labs within companies for the past few years.
   </p>
-  
+
   {% for item in site.data.books %}
   <div class="w-50">
-     <a href="{{ item.link }}">
+     <a href="{{ item.link }}.html">
       <img src="{{ item.coverImage }}" alt="{{iteam.title}}">
       <h2>{{ item.title }}</h2>
       <h3>{{ item.author }}</h3>
 
     </a>
   </div>
-  {% endfor %} 
-  
+  {% endfor %}
+
 
 
   <div class="w-100">
-   
+
     <p>
       Brands I have worked with.
     </p>
-    
+
     <img class="" src="">
     <img class="" src="">
     <img class="" src="">
     <img class="" src="">
     <img class="" src="">
   </div>
-  
-  
-  
+
+
+
   {% for item in site.data.books %}
   <div>
      <a href="{{ item.link }}">
@@ -47,7 +47,5 @@ path: /clients
 
     </a>
   </div>
-  {% endfor %} 
+  {% endfor %}
 </div>
-
-
