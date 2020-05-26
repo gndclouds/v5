@@ -34,8 +34,9 @@ nav{
 
 input[type="text"] {
   outline: none;
-  border: none; }
-  
+  border: none;
+  background: none;}
+
 footer {
   position: fixed;
  top: 90vh;
@@ -97,7 +98,7 @@ h3 {
   } */
   select {
     border: none;
-    background: #FFFFFF;
+    background: none;
     color:#000000;
   }
 }

@@ -2,7 +2,7 @@
 layout: book
 path: "/whole-earth-discipline"
 date: "2019-09-09"
-title: " catsthe Whole Earth Discipline"
+title: "The Whole Earth Discipline"
 author:
 tags: ['book', 'ecology']
 excerpt: "A preview of my first post"

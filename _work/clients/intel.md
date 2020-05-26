@@ -1,6 +1,6 @@
 ---
 layout: project
-path: "/galile"
+path: /intel/
 date: "2019-09-09"
 title: "Galileo Starter Kit"
 tags: [ Camera, ]

@@ -1,10 +1,10 @@
 ---
 layout: default
-title: projects
+title: work
 ---
 
 <section class="center w-80 pa3">
-<!--   <div class="pa3">
+  <div class="pa3">
     <ul class="list ph3 ph5-ns pv4">
       {% assign tags = site.tags | sort %} {% for tag in tags %}
       <li class="dib mr1 mb2">
@@ -17,23 +17,27 @@ title: projects
       </li>
       {% endfor %}
     </ul>
-  </div> -->
-  {% for projects in site.projects reversed%}
+  </div>
+<button type="button" name="button">experiemnt</button>
+<button type="button" name="button">clients work </button>
+<button type="button" name="button">schook</button>
+<br><br>
+  {% for work in site.work reversed%}
   <div class="fl w-100 w-50-ns pa3">
-    <a href="{{projects.url}}.html" class="db link dim">
+    <a href="{{work.url}}" class="db link dim">
       <!--         <img src="{{ projects.image }}" alt="{{ projects.title }}" class="w-100 db outline black-10"/> -->
       <img
-        src="https://source.unsplash.com/user/gndclouds/800x600"
-        alt="{{ projects.title }}"
+        src="{{ work.image }}"
+        alt="{{ work.title }}"
         class="w-100 db outline black-10"
       />
       <div class="fl w-100 ">
         <h2 class="w-100">
-          {{ projects.title }}
+          {{ work.title }}
         </h2>
         <p class="fl w-100">
-          <a href="{{ projects.tags }}">{{ projects.tags }}</a>
-          {{ projects.tags }}
+          <a href="{{ work.tags }}">{{ work.tags }}</a>
+          {{ work.tags }}
         </p>
       </div>
 

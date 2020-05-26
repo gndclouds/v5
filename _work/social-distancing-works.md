@@ -1,8 +1,8 @@
 ---
 layout: project
-path: "/social-distancing-works"
+path: /social-distancing-works/
 date: "2020-02-09"
 title: "Social Distancing Works"
-tags: [ Camera, ]
-excerpt: "A preview of my first post"
+tags: [ social, ]
+image: "https://socialdistancing.works/"
 ---

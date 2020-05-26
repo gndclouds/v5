@@ -1,6 +1,6 @@
 ---
 layout: project
-path: "/whole-person-care"
+path: /whole-person-care/
 date: "2018-09-09"
 title: "Whole Person Care"
 tags: [ healthcare, ]
@@ -32,4 +32,3 @@ Behavioral Health Access Centers
 ![]()
 San Francisco General Hospital
  View PDF
-

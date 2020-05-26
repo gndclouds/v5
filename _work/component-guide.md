@@ -1,6 +1,6 @@
 ---
 layout: project
-path: "/component-guide"
+path: /component-guide/
 date: "2020-06-30"
 title: "Component Guide"
 tags: [ Camera, ]

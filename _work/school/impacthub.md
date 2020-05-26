@@ -1,6 +1,6 @@
 ---
 layout: project
-path: "/impact-hub"
+path: /impact-hub/
 date: "2019-09-09"
 title: "Impact Hub"
 tags: [ Community, ]

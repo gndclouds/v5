@@ -1,10 +1,10 @@
 ---
 layout: project
-path: /webhook2discord
+path: /webhook2discord/
 date: "2020-03-19"
 title: "webhooks2discord guide"
 tags: [ Camera, ]
-excerpt: "A preview of my first post"
+image: ""
 ---
 
 <div class="glitch-embed-wrap" style="height: 486px; width: 100%;">

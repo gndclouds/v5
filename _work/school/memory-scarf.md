@@ -1,6 +1,6 @@
 ---
 layout: project
-path: "/memory-scarf"
+path: /memory-scarf/
 date: "2019-09-09"
 title: "Memory Scarf"
 tags: [ Camera, ]

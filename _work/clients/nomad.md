@@ -1,6 +1,6 @@
 ---
 layout: project
-path: "/nomad"
+path: /nomad/
 date: "2019-09-09"
 title: "Nomad"
 tags: [ Camera, ]
@@ -91,7 +91,7 @@ Example node for connecting Yahoo Weather API to Nomad
 
 
 Github Repo
-511 
+511
 Example node for connecting California's 511 system to Nomad
 
 

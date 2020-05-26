@@ -1,6 +1,6 @@
 ---
 layout: project
-path: "/ifttt"
+path: /ifttt/
 date: "2019-09-09"
 title: "IFTTT Maker Platform"
 tags: [ Camera, ]

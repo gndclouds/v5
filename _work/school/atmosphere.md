@@ -1,6 +1,6 @@
 ---
 layout: project
-path: "/atmosphere"
+path: /atmosphere/
 date: "2014-09-09"
 title: "Atmosphere"
 tags: [ Camera, ]

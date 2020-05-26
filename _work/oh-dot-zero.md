@@ -1,6 +1,6 @@
 ---
 layout: project
-path: "/odot0"
+path: /ohdotzero/
 date: "2019-09-09"
 title: "aOh "
 tags: [ Camera, ]
