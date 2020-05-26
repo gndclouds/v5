@@ -2,7 +2,6 @@
 layout: hello
 title: hello
 ---
-<link rel='manifest' href='../manifest.json'>
 
 <div class="section">
   <div class="pv3">
