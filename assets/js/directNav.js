@@ -4,7 +4,7 @@ function directNav(){
     // window.location.href = desiredPage + ".html";
 
 
-  window.location.href = "../" + desiredPage + ".html";
+  window.location.href = "../" + desiredPage;
 }
 
 var input = document.getElementById("myInput");

@@ -1,6 +1,6 @@
 ---
 layout: project
-path: "/webhook2discord"
+path: /webhook2discord
 date: "2020-03-19"
 title: "webhooks2discord guide"
 tags: [ Camera, ]
