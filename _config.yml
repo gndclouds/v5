@@ -18,24 +18,16 @@ plugins:
   - jekyll-seo-tag
 
 collections:
-  notes:
+  journal:
     output: true
     permalink: /:name
   books:
     output: true
     permalink: /books/:name
-  essays:
+  projects:
     output: true
     permalink: /:name
-  research:
-    output: true
-    permalink: /:name
-  work:
-    output: true
-    permalink: /:name
-  weeknotes:
-    output: true
-    permalink: /:name
+
   clips:
     output: true
     permalink: /:name

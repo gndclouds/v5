@@ -24,18 +24,31 @@ body {
   /* Do not repeat the image */
   background-size: cover;
   /* Resize the background image to cover the entire container */
+  line-height: 1.8;
+}
+a {
+  color:gray;
 }
 
 nav{
   position: fixed;
- top: 0;
- width: 100%;
+  top: 0;
+  width: 100%;
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+letter-spacing: 0.09em;
 }
 
 input[type="text"] {
   outline: none;
   border: none;
-  background: none;}
+  background: none;
+  width:500px;
+}
 
 footer {
   position: fixed;
@@ -53,11 +66,23 @@ footer select {
   margin-left: -1rem;
 
 }
+img{
+  overflow: hidden;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+}
 
 iframe {
   border: 0;
 }
-
+h1{
+  font-family: Inter;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 126.7%;
+}
 h3 {
   font-family: Inter;
   font-style: normal;
@@ -66,18 +91,48 @@ h3 {
   line-height: 17px;
 }
 
+button {
+  border-style: none;
+  border-color:  none;
+
+}
 .search {
   width: 80vw;
   height: 40px;
 }
+.hero-text{
+  font-size: 1.25rem;
+  line-height: 24px;
+
+}
 
 .minimal-card{
+
 }
+
+.mini-title{
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 12px;
+letter-spacing: 0.09em;
+text-transform: uppercase;
+}
+
+.mini-title-section{
+text-align: right;
+}
+
+
+
+
 
 /* LIGHT MODE */
 @media (prefers-color-scheme: light) {
   body {
-    background-color: white;
+    background: #EEEEEE;
+    /* background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%); */
   }
 
   h1, h2, h3, h4, h5, p, nav, footer {
@@ -107,11 +162,16 @@ h3 {
   box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);
   /* border-radius: 3px; */
 }
+input[type="text"] {
+  color: black;
+}
+
+
 
 /* DARK MODE */
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: black;
+    background: #222831;
   }
 
   h1, h2, h3, h4, h5, p, nav, footer {
@@ -137,5 +197,8 @@ h3 {
   .card-hover:hover{
     box-shadow: 6px 6px 0px rgba(255, 255, 255, 0.25);
     /* border-radius: 3px; */
+  }
+  input[type="text"] {
+    color: white;
   }
 }
