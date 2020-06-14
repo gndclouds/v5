@@ -169,7 +169,7 @@ input[type="text"] {
 
 
 /* DARK MODE */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   body {
     background: #222831;
   }
@@ -186,9 +186,7 @@ input[type="text"] {
     background: #000000;
     border-color: #FFFFFF;
   }
-  /* options {
-    border: 1px solid #e5e5e5;
-  } */
+
   select {
     border: none;
     background: #000000;
@@ -196,9 +194,8 @@ input[type="text"] {
   }
   .card-hover:hover{
     box-shadow: 6px 6px 0px rgba(255, 255, 255, 0.25);
-    /* border-radius: 3px; */
   }
   input[type="text"] {
     color: white;
   }
-}
+} */
