@@ -8,8 +8,6 @@ excerpt: "A preview of my first post"
 image: "https://d2w9rnfcy7mm78.cloudfront.net/7659318/original_97f9d765c9c8ecd64454e90ca38bab6d.png?1592093255?bc=0"
 ---
 
-Nomad
-
 <div style="padding:52.81% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/194428749?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 Overview

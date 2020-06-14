@@ -7,7 +7,11 @@ tags:
 image: "../assets/images/projects/gsk.hero_open.png"
 ---
 
+<div class="center">
+<div class="w-100">
 <iframe width="100%" height="450" src="https://www.youtube.com/embed/ZHoupflzwss" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
 
 # Summery
 At Intel Labs I worked on the User Experience Research Group's Open Design Team where I focused on researching how Intel could make hardware more approachable to novice makers. Our goal was to deliver a comprehensive research summary of the space surrounding Galileo and a final prototype of our recommended solution. Our team conducted a comprehensive research phase focusing on building a comprehensive ecosystem surrounding the Galileo to enable it to become an educational platform for individuals new to the maker space.
