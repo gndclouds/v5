@@ -10,7 +10,7 @@ image: "https://d2w9rnfcy7mm78.cloudfront.net/7651746/original_fa67b0677adceacef
 
 house is a project focused on the long-term dwelling of humans on earth. Phase one was a year-long research phase looking at how to decentralize all public utilities. In partnership with Utopia, Stone Edge Micro-grid, and Center for Art and Public Life at California College of the Arts, we are publishing what we learned as we determine the best next steps.
 
-What do we mean by “decentralize all public utilities”? Well, today if you want water, power, waste, or communication to be available at you home you need to connect to your cities or counties' utility grid. We are researching a future in which you can be separated from that grid system. This may sound a bit like a micro-grid but thinking even smaller. Our focus is on what we are calling the pico grid or a grid that can service all traditional public utility needs of one household. To achieve this, we are working to develop a “core” which would maintain and manage all your utilities.
+What do we mean by “decentralize all public utilities”? Well, today if you want water, power, waste, or communication to be available at your home, you need to connect to your cities or counties’ utility grid. We are researching a future in which you can be separated from that grid system. This may sound a bit like a micro-grid but thinking even smaller. Our focus is on what we are calling the pico grid or a grid that can service all traditional public utility needs of one household. To achieve this, we are working to develop a system, called core, which would maintain and manage all your utilities.
 
 ![Example Modal of Core](https://d2w9rnfcy7mm78.cloudfront.net/7661014/original_5c1f9b40f4bbedc9fa02267e075ba45b.png?1592106672?bc=0)
 
@@ -18,11 +18,9 @@ We think that cities will contine to grow [^1] and suburbs will become more dens
 
 
 # Pico-Grids
-We think one soulutiuon could be to make a _plug-n-play_ style unit for new construciton buildings which combind all the utilites into one and help save waste enerfy.
+The Core can be thought of as a plug-n-play style device. Just connect all the appliances and utilities in your existing home, and we will manage all the input and output to the city grids.
 
 ![Example Modal of Core](https://d2w9rnfcy7mm78.cloudfront.net/7629879/original_031440438bd1eeb41a8c2a7b4326f3dd.png?1591885999?bc=0)
-
-This however may need to be simplified to fixfture connections if its to be used more tradational home architerxtures.
 
 
 # What can we make today?
@@ -30,7 +28,7 @@ This however may need to be simplified to fixfture connections if its to be used
 ![](https://d2w9rnfcy7mm78.cloudfront.net/7629880/original_b8eef11d0b331fc07a47942a615a73d7.png?1591885999?bc=0)
 
 
-Making a core will take several years of research and development by its self. But we also wanted to explore how we could start with a product today and transition to a core like model over time. So to communicate what this might look like, we created three products around power, water, and internet to show how we might start augmenting current appliances today. Some starting products might be a Router, Sink, and Switch as shown below.
+Making a core will take several years of research and development by its self. But we also wanted to explore how we could start with a product today and transition to a core like model over time. So communicating what this might look like, we created three products around power, water, and internet to show how we might start augmenting current appliances today. Some starting products might be a Router, Sink, and Switch.
 
 
 
@@ -118,14 +116,15 @@ Wastewater shouldn’t be discarded after one use! We created a way to filter an
 
 ![](https://d2w9rnfcy7mm78.cloudfront.net/7629881/original_bb9db608f9881f2f736f9776168b1532.png?1591886001?bc=0)
 
-swithcsss
+We wanted to help transition existing appliances too. So with our smart switch, you can set a timer to determine when to start the device when energy is cheaper. For example, maybe you want to run your washer at night or early in the morning when there is typically less energy demand.
+
 <div class="dt  center pt0 pb5 pv5-m pv6-ns">
   <div class="db dtc-ns v-mid-ns">
-    <img src="https://d2w9rnfcy7mm78.cloudfront.net/7629874/original_56dd66ef323d7981403cfdb99b769b93.png?1591885995?bc=0" alt="A bright blue sky" class="w-100 " />
+    <img src="https://d2w9rnfcy7mm78.cloudfront.net/7629871/original_24818b8fd981bfdf985e5c4d44db6ef3.png?1591885994?bc=0" alt="A bright blue sky" class="w-100 " />
   </div>
   <div class="db dtc-ns v-mid ph2 pr0-ns pl3-ns">
     <p class="lh-copy">
-      Currently your router talks to a data center when ever it needs to get any form of data you request.
+    We tent to think of energy in a very simplified way. For example, there is a power plant that sends energy to our home.
     </p>
   </div>
 </div>
@@ -133,7 +132,7 @@ swithcsss
 <div class="dt  center pt0 pb5 pv5-m pv6-ns">
 <div class="db dtc-ns v-mid ph2 pr0-ns pr3-ns">
   <p class="lh-copy">
-    Often neighbors are requesting the same software update or watching the same show too. And they are much closer then a data center to you.
+  But in reality, there are lots of wires, transformers, and boilers, which help get the energy to us.
   </p>
 </div>
   <div class="db dtc-ns v-mid-ns">
@@ -147,10 +146,12 @@ swithcsss
   </div>
   <div class="db dtc-ns v-mid ph2 pr0-ns pl3-ns">
     <p class="lh-copy">
-      Our router would store recently visited sites, software updates, and web media to reduce the bandwidth and thus energy need to maintain our internet Infrastructure.
+And since energy production is a slow process, there is typically an entire power plant sanding by idling waiting just in case we all turn on the light at the same time.
     </p>
   </div>
 </div>
 
 
-[^1] note
+# What's next?
+
+This was a 20% project for a lot of the team so we are on a break, thinking about how to best bring this project forward into the real world.

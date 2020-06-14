@@ -20,17 +20,17 @@ plugins:
 collections:
   journal:
     output: true
-    permalink: /:name
+    permalink: /:name/
   books:
     output: true
-    permalink: /books/:name
+    permalink: /books/:name/
   projects:
     output: true
-    permalink: /:name
+    permalink: /:name/
 
   clips:
     output: true
-    permalink: /:name
+    permalink: /:name/
 
 
 # defaults:
