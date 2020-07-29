@@ -1,4 +1,0 @@
----
-layout: hello
-title: hello
----
