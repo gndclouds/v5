@@ -3,60 +3,19 @@ layout: default
 title: projects
 ---
 
-<section class="center w-100 pa3">
-
-  <div class="flex flex-wrap w-30 ">
-    SORDA ABOUT PROEJCSTS WITH TAGS AND THINGSD
-  </div>
-
-  <div class="fl flex-wrap w-30 ">
-    <ul>
+<!-- <section class="center w-25 pa3">
+  <div class="fl flex-wrap w-50 ">
       {% for projects in site.projects reversed %}
-      <li>
-        <a href="{{projects.url}}" class="db link dim">
-
-            <h2 class="w-100">
-              {{ projects.title }}
-            </h2>
-
-
-
-        </a>
-      </li>
-
+        <article class="">
+          <a href="{{ projects.url }}" class="db link dim">
+              <h2 class="w-100">
+                {{ projects.title }}
+              </h2>
+          </a>
+        </article>
       {% endfor %}
-    </ul>
-
   </div>
-
-
 
 </section>
-
-
-<!--
-{% for projects in site.projects reversed %}
-<div class="fl w-100 w-50-ns pa3">
-  <a href="{{projects.url}}" class="db link dim">
-            <img src="{{ projects.image }}" alt="{{ projects.title }}" class="w-100 db outline black-10"/>
-    <img
-      src="{{ projects.image }}"
-      alt="{{ projects.title }} product hero image"
-      class="w-100 db outline black-10"
-    />
-    <div class="fl w-100 ">
-      <h2 class="w-100">
-        {{ projects.title }}
-      </h2>
-      <p class="fl w-100">
-        {{ projects.content | strip_html | truncatewords: 25 }}
-
-      </p>
-    </div>
-
-    <dl class="mt2 f6 lh-copy">
-      <dd class="ml0 black w-50"></dd>
-    </dl>
-  </a>
-</div>
-{% endfor %} -->
+<section class="center w-100 pa3">
+</section> -->

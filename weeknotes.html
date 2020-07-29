@@ -3,49 +3,30 @@ layout: default
 title: weeknotes
 ---
 
-
+<section class="fl w-100">
+    <p>A colloection of what I have been working on this week.</p>
+</section>
 <section class="fl w-100">
   {% assign timeframe = 604800 %}
 
-{% for journal in site.journal reversed %}
-  {% assign post_in_seconds = journal.date | date: "%s" | plus: 0 %}
+{% for notes in site.notes reversed %}
+  {% assign post_in_seconds = notes.date | date: "%s" | plus: 0 %}
   {% assign recent_posts = "now" | date: "%s" | minus: timeframe  %}
 
-  {% capture day %}{{ journal.date | date: '%Y-%m-%d' }}{% endcapture %}
-  {% capture nday %}{{ journal.next.date | date: '%Y-%m-%d' }}{% endcapture %}
+  {% capture day %}{{ notes.date | date: '%Y-%m-%d' }}{% endcapture %}
+  {% capture nday %}{{ notes.next.date | date: '%Y-%m-%d' }}{% endcapture %}
 
   {% if post_in_seconds > recent_posts %}
 
 
   {% if day != nday %}
-  <h5 class="date">{{ journal.date | date: "%Y. %m. %e" }}</h5>
-
-
+  <h5 class="date">{{ notes.date | date: "%Y. %m. %e" }}</h5>
 
   {% endif %}
 
-  <h1>{{journal.title}}</h1>
-  <p>{{journal.content}}</p>
-
+  <h1>{{notes.title}}</h1>
+  <p>{{notes.content}}</p>
 
   {% endif %}
 {% endfor %}
-
-  <!-- {% for journal in site.journal reversed %}
-
-      {% capture day %}{{ journal.date | date: '%Y-%m-%d' }}{% endcapture %}
-      {% capture nday %}{{ journal.next.date | date: '%Y-%m-%d' }}{% endcapture %}
-
-
-      {% if day != nday %}
-      <h5 class="date">{{ journal.date | date: "%Y. %m. %e" }}</h5>
-
-
-
-      {% endif %}
-
-      <h1>{{journal.title}}</h1>
-
-  {% endfor %} -->
-
 </section>

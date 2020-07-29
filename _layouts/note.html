@@ -2,30 +2,27 @@
 layout: default
 ---
 
-<article class="center mw7  mv4">
+<article class="center mw7 mv4">
 <!--   <h1 class="f4 mv0 pv2 ph3">{{ page.title | escape }}</h1> -->
-   <div class="aspect-ratio aspect-ratio--6x4 mb4">
+   <!-- <div class="aspect-ratio aspect-ratio--6x4 mb4">
     <div class="aspect-ratio--object cover" style="background:url({{page.image}}) center;"></div>
-  </div>
+  </div> -->
   <div class="fl w-100">
     <p class="w-50 pv2 ph3">{{ page.location | escape }}</p>
     <p class="w-50 pv2 ph3">{{ page.location | escape }}</p>
   </div>
 
-
-
   <div class="pa3 bt">
     <p class=" lh-copy measure mv0">
-
       {{ content }}
     </p>
   </div>
 
-  <!-- <div class="">
+  <div class="">
     <tr>
-{% for tag in page.tags %}
-<td>{{ tag }}</td>
-{% endfor %}
-</tr>
-  </div> -->
+    {% for tag in page.tags %}
+    <td>{{ tag }}</td>
+    {% endfor %}
+    </tr>
+  </div>
 </article>

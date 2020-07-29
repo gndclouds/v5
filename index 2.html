@@ -1,0 +1,32 @@
+---
+layout: default
+title: hello
+---
+
+<section class="flex flex-wrap hero-text pv6">
+  <div class="w-60">
+    <h1>Heya, I build web projects as part of <a href="https://tinyfactories.space" alt="Tiny Factories Website">Tiny Factories</a> while thinking about strategies for  climate mitigation. Some areas I have been thinking about are <span><a href="" alt="">Biomimetic Manufacturing</a></span>, <span><a href="https://www.are.na/gndclouds/people-machine-co-creation" alt="People Computer Co-creation">People Computer Co-creation</a></span>, and <span><a href="" alt="">Infrastructure Resiliency</a></span>.</h1>
+  </div>
+</section>
+<section class="flex flex-wrap hero-text pv6">
+<div class="w-100">
+  <h1>notes from this week:</h1>
+  </div>
+  <div class="w-100">
+    {% assign timeframe = 604800 %}
+    {% for notes in site.notes reversed %}
+      {% assign post_in_seconds = notes.date | date: "%s" | plus: 0 %}
+      {% assign recent_posts = "now" | date: "%s" | minus: timeframe  %}
+
+      {% capture day %}{{ notes.date | date: '%Y-%m-%d' }}{% endcapture %}
+      {% capture nday %}{{ notes.next.date | date: '%Y-%m-%d' }}{% endcapture %}
+
+      {% if post_in_seconds > recent_posts %}
+      {% if day != nday %}
+        <h5 class="date">{{ notes.date | date: "%Y. %m. %e" }}</h5>
+      {% endif %}
+        <a href="{{notes.externalurl}}"><h1>{{notes.title}} ↗</h1></a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>

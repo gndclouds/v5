@@ -5,45 +5,12 @@ title: clips
 
 
 <section class="center w-100">
-  <div class="w-100">
-<!-- Todays event-->
+  <h1>Clips (WIP)</h1>
 
-   {% for notes in site.notes limit:1 %}
-          <article class="flex center w-100 hidden mv4">
-            <div class="fl w-50 pa3">
-              <img src="https://source.unsplash.com/user/gndclouds/800x600" alt="{{ notes.title }}" class="w-100 db outline black-10"/>
-            </div>
-
-            <div class="fr w-50 pa3">
-              <p class="fl w-100">{{ notes.title | escape }}</p>
-              <p class="fl w-100">
-                {{ notes.content | strip_html | truncatewords: 50 }}
-              </p>
-            </div>
-
-          </article>
-      {% endfor %}
-
-  </div>
-</section>
-
-<section class="fl pa2">
-
-{% for clips in site.clips reversed %}
-    <div class="fl w-50 w-30-m w-30-l pa3">
-      <a href="{{notes.url}}" class="db link dim">
-        <div class="fl w-100 ">
-          <h3 class="fl w-50">
-            {{ notes.title }}
-          </h3>
-          <h3 class="fr w-50">
-            -->
-          </h3>
-        </div>
-        <dl class="mt2 f6 lh-copy">
-          <dd class="ml0 black w-50"> </dd>
-        </dl>
-      </a>
-    </div>
-  {% endfor %}
+<p>When I collect things from around the internet they appear here.</p>
+  <!-- {% assign image_files = site.static_files | where: "image", true %}
+  {% for myimage in image_files %}
+    {{ myimage.path }}
+      <p>file</p>
+  {% endfor %} -->
 </section>
