@@ -1,7 +1,7 @@
 ---
 layout: note
 permalink: /drm-free-book-publishers/
-externalurl: ""
+externalurl: "https://notion.so/tinyfactories/a9c391b2f0d94cc7b6a03cd9a7a4083f?v=65d645341e5f408eb9939003e6e98b7a"
 date: "2020-02-19"
 title: "DRM Free Book Publishers"
 tags: [ note ]

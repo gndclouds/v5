@@ -6,7 +6,8 @@
     "start": "bundle exec jekyll build && http-server _site/ -c-1 -p $PORT"
   },
   "dependencies": {
-    "http-server": "^0.12.1",
+    "are.na": "^0.1.4",
+    "http-server": "^0.12.3",
     "pattern.css": "^1.0.0"
   },
   "engines": {

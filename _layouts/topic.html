@@ -1,0 +1,87 @@
+---
+layout: default
+---
+<body onload="getInfo('{{page.arena_url}}')">
+
+  <div class="content-wrapper">
+    <nav class="row">
+      <div>
+        <a id="page-logo" href="/">{{site.title}}</a>
+        <p id="page-title">{{page.title}}<span class="open-home"></span></p>
+      </div>
+    </nav>
+  </div>
+
+  <div class="content-wrapper">
+    <div class="row title">
+      <h1>{{page.title}}</h1>
+      <div class="title-image"><span class="open-home"></span></div>
+    </div>
+    <h5 id="channelDescription"></h5>
+
+    <div class="channel-meta row">
+      <div>
+        <div class="collumn">
+          <div>
+            <p>Links</p>
+          </div>
+          <div>
+            <h6 id="linkNumber">00</h6>
+          </div>
+        </div>
+        <div class="collumn">
+          <div>
+            <p>Contribute</p>
+          </div>
+          <div class="add-options">
+
+            <h6>
+              <a title="add link in Are.na" target="_blank" href="http://www.are.na/gndclouds/{{page.arena_url}}"><span class="open-add"></span> are.na</a>
+            </h6>
+          </div>
+        </div>
+        <div class="collumn" id="channel-users">
+          <div>
+            <p>Contributors</p>
+          </div>
+          <div id="contributorWrapper" class="row contributor-row">
+            <div class="contributors ghost"></div>
+            <div class="contributors ghost"></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div id="lastUpdated" class="collumn">
+          <div>
+            <p>Last updated</p>
+          </div>
+          <div>
+            <h6 id="timeStamp"></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="content-wrapper"><hr /></div> -->
+
+  <!-- <div class="content-wrapper">
+
+    <h1>furure notes tbd </h1>
+  </div> -->
+  <div class="content-wrapper">
+    <hr />
+  </div>
+  <div class="cf w-100 pa2-ns content-wrapper">
+
+      <div class="link-wrapper"></div>
+
+    
+  </div>
+  <div class="content-wrapper load">
+    <h6><a id="loadButton" onclick="loadBlocks()">Load More</a></h6>
+    <div class="loading">
+      <div id="lottie" class="spinner"></div>
+    </div>
+  </div>
+</body>

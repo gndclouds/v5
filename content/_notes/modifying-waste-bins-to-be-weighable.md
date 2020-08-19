@@ -1,7 +1,7 @@
 ---
 layout: note
 permalink: /modifying-waste-bins-to-be-weighable/
-externalurl: ""
+externalurl: "https://reading.supply/@gndclouds/20200114-c3qoxb"
 date: "2020-01-14"
 title: "Modifying Waste Bins to be Weighable"
 tags: Waste Bins, Waste Systems, Computer Vision,

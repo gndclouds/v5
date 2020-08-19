@@ -10,13 +10,16 @@ title: notes
       {% capture day %}{{ notes.date | date: '%Y-%m-%d' }}{% endcapture %}
       {% capture nday %}{{ notes.next.date | date: '%Y-%m-%d' }}{% endcapture %}
 
-
       {% if day != nday %}
       <h5 class="date">{{ notes.date | date: "%Y. %m. %e" }}</h5>
       {% endif %}
 
-      <a href="{{notes.url}}"><h1>{{notes.title}}</h1></a>
+      {% if notes.externalurl != null %}
+      <a href="{{notes.externalurl}}"><h1>{{notes.title}} ↗</h1></a>
 
+      {% else %}
+      <a href="{{notes.permalink}}"><h1>{{notes.title}}</h1></a>
+      {% endif %}
   {% endfor %}
 
 </section>

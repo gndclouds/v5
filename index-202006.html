@@ -6,7 +6,11 @@ title: hello
 <!-- FIXME: list everything in the catagoituy of notes with the filters of journal/experiemnts/ -->
 <section class="flex flex-wrap hero-text pv6">
   <div class="w-100">
-    <h1>Some longterm explorations I'm working on are more focused on climate mitigation strategies through the lenses of Biomimetic Economics, People Computer Co-creation, and Infrastructure Resiliency.</h1>
+    <h1>
+      Some longterm explorations I'm working on are more focused on climate
+      mitigation strategies through the lenses of Biomimetic Economics, People
+      Computer Co-creation, and Infrastructure Resiliency.
+    </h1>
   </div>
 </section>
 <!-- <section class="flex flex-wrap hero-text pv6">
@@ -29,95 +33,90 @@ title: hello
       </div>
     </div>
   </section> -->
-  <section class="flex flex-wrap hero-text pv1">
-    <div class="flex flex-wrap center">
-        <!-- <h4 class="w-10 mini-title">Featured</h4> -->
+<section class="flex flex-wrap hero-text pv1">
+  <div class="flex flex-wrap center">
+    <!-- <h4 class="w-10 mini-title">Featured</h4> -->
 
-      <div class="center w-80">
-        <!-- <div class="w-100">
+    <div class="center w-80">
+      <!-- <div class="w-100">
           <h1>Some longterm explorations I'm working on are more focused on climate mitigation strategies through the lenses of <a href="https://emergence.gndclouds.cc/biomimetic-economics/">Biomimetic Economics</a>, <a href="https://emergence.gndclouds.cc/people-computer-co-creation//">People Computer Co-creation</a>, and￼ <a href="https://emergence.gndclouds.cc/infrastructure-resiliency/">Infrastructure Resiliency</a>.</h1>
         </div> -->
-        <div class="w-100">
-          <h1>Some longterm explorations I'm working on are more focused on climate mitigation strategies through the lenses of Biomimetic Economics, People Computer Co-creation, and Infrastructure Resiliency.</h1>
-        </div>
+      <div class="w-100">
+        <h1>
+          Some longterm explorations I'm working on are more focused on climate
+          mitigation strategies through the lenses of Biomimetic Economics,
+          People Computer Co-creation, and Infrastructure Resiliency.
+        </h1>
+      </div>
 
-        <div class="flex flex-wrap w-100 pv3">
-          <h4 class="w-100 mini-title">experiments <a class="link"href="#">arrow</a></h4>
-          {% for projects in site.projects reversed limit:6 %}
-          <article class="w-100 w-50-m w-third-ns">
-            <a href="{{ projects.url }}">
-              <h3>{{ projects.title }}</h3>
-            </a>
-          </article>
-          {% endfor %}
-        </div> -->
-         <div class="flex flex-wrap w-100 pv=3">
-          <h4 class="w-100 mini-title">experiments <a class="link"href="#"></a></h4>
-          {% for journal in site.journal  %}
-            {% for tag in journal.tags %}
-              {% if tag == "experiments" %}
-              <article class="w-100 w-50-m w-third-ns ">
-                <a class="link" href="{{ journal.url }}">
-                  <h3>{{ journal.title }}</h3>
-                </a>
-              </article>
+      <div class="flex flex-wrap w-100 pv3">
+        <h4 class="w-100 mini-title">
+          experiments <a class="link" href="#">arrow</a>
+        </h4>
+        {% for projects in site.projects reversed limit:6 %}
+        <article class="w-100 w-50-m w-third-ns">
+          <a href="{{ projects.url }}">
+            <h3>{{ projects.title }}</h3>
+          </a>
+        </article>
+        {% endfor %}
+      </div>
+      -->
+      <div class="flex flex-wrap w-100 pv=3">
+        <h4 class="w-100 mini-title">
+          experiments <a class="link" href="#"></a>
+        </h4>
+        {% for journal in site.journal %} {% for tag in journal.tags %} {% if
+        tag == "experiments" %}
+        <article class="w-100 w-50-m w-third-ns">
+          <a class="link" href="{{ journal.url }}">
+            <h3>{{ journal.title }}</h3>
+          </a>
+        </article>
 
-            {% endif %}
+        {% endif %} {% endfor %} {% endfor %}
+      </div>
+      <ul>
+        {% assign authors = site.journal | group_by: "author" %} {% for author
+        in authors %}
+        <li>
+          {{ author.name }}
+          <ul>
+            {% for page in author.items limit: 5 %}
+            <li>{{ page.title }}</li>
             {% endfor %}
-          {% endfor %}
-        </div>
+          </ul>
+        </li>
+        {% endfor %}
+      </ul>
 
+      <div class="flex flex-wrap w-100 pv=3">
+        <h4 class="w-100 mini-title">research <a class="link" href="#"></a></h4>
+        {% for journal in site.journal reversed limit:9 %} {% for tag in
+        journal.tags %} {% if tag == "research" %}
+        <article class="w-100 w-50-m w-third-ns">
+          <a class="link" href="{{ journal.url }}">
+            <h3>{{ journal.title }}</h3>
+          </a>
+        </article>
 
+        {% endif %} {% endfor %} {% endfor %}
+      </div>
+      <!-- TODO: Mabe add something about exploreimg more work or just an arrow about more work -->
 
+      <div class="flex flex-wrap w-100 pv=3">
+        <h4 class="w-100 mini-title">notes <a class="link" href="#"></a></h4>
+        {% for journal in site.journal reversed limit:9 %} {% for tag in
+        journal.tags %} {% if tag == "note" %}
+        <article class="w-100 w-50-m w-third-ns">
+          <a class="link" href="{{ journal.url }}">
+            <h3>{{ journal.title }}</h3>
+          </a>
+        </article>
 
-
-
-
-       <ul>
-          {% assign authors = site.journal | group_by: "author" %}
-          {% for author in authors %}
-            <li>{{ author.name }}<ul>
-              {% for page in author.items limit: 5 %}
-                <li>{{ page.title }}</li>
-              {% endfor %}
-            </ul></li>
-          {% endfor %}
-        </ul>
-
-
-
-
-
-
-  <div class="flex flex-wrap w-100 pv=3">
-          <h4 class="w-100 mini-title">research <a class="link"href="#"></a></h4>
-          {% for journal in site.journal reversed limit:9 %}
-            {% for tag in journal.tags %}
-              {% if tag == "research" %}
-              <article class="w-100 w-50-m w-third-ns ">
-                <a class="link" href="{{ journal.url }}">
-                  <h3>{{ journal.title }}</h3>
-                </a>
-              </article>
-
-            {% endif %}
-            {% endfor %}
-          {% endfor %}
-        </div>
-        <!-- TODO: Mabe add something about exploreimg more work or just an arrow about more work -->
-
-        <div class="flex flex-wrap w-100 pv=3">
-          <h4 class="w-100 mini-title">notes <a class="link"href="#"></a></h4>
-          {% for journal in site.journal reversed limit:9 %}
-            {% for tag in journal.tags %}
-              {% if tag == "note"  %}
-              <article class="w-100 w-50-m w-third-ns ">
-                <a class="link" href="{{ journal.url }}">
-                  <h3>{{ journal.title }}</h3>
-                </a>
-              </article>
-
-            {% endif %}
-            {% endfor %}
-          {% endfor %}
-        </div> -->
+        {% endif %} {% endfor %} {% endfor %}
+      </div>
+      -->
+    </div>
+  </div>
+</section>

@@ -19,6 +19,9 @@ collections_dir: content
 
 
 collections:
+  topics:
+    output: true
+    permalink: /:name/
   notes:
     output: true
     permalink: /:name/

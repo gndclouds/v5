@@ -147,4 +147,3 @@ function niceDate (ts) {
   if (date === yesterday) return 'Yesterday'
   return date
 }
-LICENSE

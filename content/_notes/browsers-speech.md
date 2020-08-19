@@ -1,7 +1,7 @@
 ---
 layout: note
 permalink: /browser-screen-readers-2019/
-externalurl: ""
+externalurl: 
 date: "2019-11-30"
 title: "Browser's with Screen Readers in 2019"
 catagories:

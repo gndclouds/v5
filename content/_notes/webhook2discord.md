@@ -1,6 +1,7 @@
 ---
-layout: project
-path: /webhook2discord/
+layout: note
+permalink: /webhook2discord/
+externalurl:
 date: "2020-03-19"
 title: "webhooks2discord guide"
 tags: [ webhook, discord, experiments ]
