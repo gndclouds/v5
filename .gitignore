@@ -1,8 +1,8 @@
 _site
+node_modules
 public
 .sass-cache
 .jekyll-metadata
 .env
 .env.build
-
 .vercel
