@@ -3,37 +3,37 @@ layout: default
 title: book
 ---
 
-
 <section class="hero book">
-  <grid columns=2>
-    <c span-s=row span=1> <img src="{{page.image}}" alt="">
-    </c>
-    <c span-s=row span=2-3>
+  <grid columns="2">
+    <!-- <div span-s=row span=1> <img src="{{page.image}}" alt="">
+    </div> -->
+    <div span-s="row" span="2-3">
       <h1>{{page.title}}</h1>
-      <br>
+      <br />
       <h2>{{page.author}}</h2>
-      <br>
-      <h3>{{page.tags}}</h3>
-
-    </c>
-
+      <br />
+    </div>
   </grid>
 </section>
 
-<grid columns=3>
+<grid columns="3">
+  {{content}}
 </grid>
 
-{% for post in site.corpus %}
-  {% for tag in post.tags %}
-    {% if post.tags contains page.title  %}
+<!-- {% for clips in site.clips %}
+{% for tag in clips.tags %}
+{% if clips.tags contains "cat" %}
 
-    <c>
-      <p>{{post.content}}</p>
-      <br>
-    </c>
 
-    {% endif %}
-  {% endfor %}
+<article class="">
+  <a href="{{ clips.url }}" class="db link dim">
+    <img src="{{ clips.image }}" alt="" />
+    <p class="w-100">
+      {{ post.content }}
+    </p>
+  </a>
+</article>
+
+{% endif %}
 {% endfor %}
-
-
+{% endfor %} -->

@@ -4,13 +4,11 @@ path: "/working-in-public/"
 date: "2019-09-09"
 title: "Working in Public"
 author: "Nadia Eghbal"
-tags: ['book', 'Nadia Eghbal']
-image: 
+tags: ['book', 'Nadia Eghbal', 'Working in Public']
+image:
 ---
 
-<p>
-INTRODUCTION
->If the free exchange of ideas formed the basis of a flourishing society, then we had a moral imperative to connect more people to one another.
+
 
 INTRODUCTION
 >“For this to be possible, the method of storage must not place its own restraints on the information,”
@@ -146,4 +144,3 @@ CONCLUSION
 CONCLUSION
 >And newsletters are another, curiously reemerging format, where creators can broadcast in longform to large audiences, without expectation of a dialogue. In
 What dialog is tiny factories trying to have?
-</p>

@@ -8,6 +8,20 @@ title: clips
   <h1>Clips (WIP)</h1>
 
 <p>When I collect things from around the internet they appear here.</p>
+
+<div class="fl flex-wrap w-50 ">
+    {% for clips in site.clips reversed %}
+
+      <article class="">
+        <a href="{{ clips.url }}" class="db link dim">
+          <img src="{{ clips.image }}" alt="">
+            <h2 class="w-100">
+              {{ clips.title }}
+            </h2>
+        </a>
+      </article>
+    {% endfor %}
+</div>
   <!-- {% assign image_files = site.static_files | where: "image", true %}
   {% for myimage in image_files %}
     {{ myimage.path }}
