@@ -1,7 +1,2 @@
-# gndclouds
 
-
-- Add link previews on hover
-- Add links tag and gatagoty pages
-- filter poasta by tag on hello
-ggoup posts by tag?
+# Heya, I build web projects as part of [Tiny Factories](https://tinyfactories.space) while thinking about strategies for  climate mitigation. Some areas I have been thinking about are [Biomimetic Manufacturing](https://www.are.na/gndclouds/biomimetic-manufacturing), [People Computer Co-creation](https://www.are.na/gndclouds/people-machine-co-creation), and [Infrastructure Resiliency](https://www.are.na/gndclouds/infrastructure-resiliency).
